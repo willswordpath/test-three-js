@@ -33,9 +33,11 @@ function ThreeContainer() {
       const x = msStamp * 1e-3;
       camera.position.x = Math.sin(x);
       camera.position.y = -Math.cos(x);
+      cube.rotation.x += 1e-3 * dT;
+      cube.rotation.y += 1e-3 * dT;
       renderer.render(scene, camera);
     }
-    animate(performance.now());
+    animate((lastRenderMsStamp = performance.now()));
 
     return () => {
       cancelAnimationFrame(requestID);
