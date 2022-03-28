@@ -1,0 +1,28 @@
+.App {
+  height: 100%;
+  overflow: auto;
+  font-family: sans-serif;
+  text-align: center;
+  background: blueviolet;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  background: grey;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.color-block {
+  font-size: 2rem;
+  background: orange;
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
